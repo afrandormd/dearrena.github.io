@@ -1,4 +1,6 @@
 // Tampilkan pesan sapaan ketika pengunjung membuka situs web untuk pertama kali
+window.onload = alert('pencet gambar suratnya sayaang!')
+
 function showGreeting() {
   var greeting = document.getElementById("greeting");
   greeting.innerHTML = "Hallo, sayangkuuu Raina Syaffura Rabiani";
@@ -14,14 +16,23 @@ function dismissGreeting() {
 }
 
 // audio play
+let audio = document.getElementById('audio')
+let playStopBTN = document.getElementById('playStopBTN')
+let count = 0
 
-let x = document.getElementById("myAudio")
-
-function playAudio() {
-    x.play()
+function playStop(){
+    if(count == 0){
+        count = 1
+        audio.play()
+        playStopBTN.innerHTML = "&#9208"
+    } else {
+        count = 0
+        audio.pause()
+        playStopBTN.innerHTML = "&#9658"
+    }
 }
 
-window.onload = playAudio
+
 // fungsi teks berjalan
 // let type = document.getElementById("typewriter")
 // let name = 'Raina Syaffura Rabiani'

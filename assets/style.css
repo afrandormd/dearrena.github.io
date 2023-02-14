@@ -34,7 +34,7 @@ body {
 }
 .note {
     background-color: bisque;
-    text-align: justify;
+    text-align: center;
     margin: 2% 0;
     padding: 3%;
     border-radius: 15px;
@@ -62,7 +62,11 @@ body {
 }
 
 .floating-image {
-    padding: 20px 0;
+    position: absolute;
+    left: 120px;
+    top: 500px;
+    z-index: -1;
+    padding: 10px 0;
     animation: float 5s ease-in-out infinite;
 }
 
@@ -79,7 +83,8 @@ body {
 }
 
 .welcome {
-  position: absolute;
+position: fixed;
+  z-index: 999;
   font-family: 'Sofia', courier;
   top: 50%;
   width: 100vw;
@@ -97,9 +102,25 @@ body {
   background-color: palevioletred;
   color: #fff;
   border: none;
-  border-radius: 10px;
-  box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.15);
-  padding: 10px 20px;
+  border-radius: 100%;
+  box-shadow: 0px 2px 10px 1px rgba(141, 138, 138, 0.59);
+  padding: 50px;
+  font-size: 3em;
   margin-top: 20px;
   cursor: pointer;
+}
+
+button {
+    padding: 15px 15px;
+    border-radius: 100%;
+    margin: 5px 45vw;
+    position: relative;
+    font-size: 22px;
+    text-align: center;
+    line-height: 10px;
+    min-width: 15px;
+    color: white;
+    border: none;
+
+    background-color: palevioletred;
 }
