@@ -32,6 +32,15 @@ body {
 .image {
     width: 100%;
 }
+
+.img-container{
+    background-color: palevioletred;
+    z-index: -999;
+    margin: 10px 0;
+    width: 70vw;
+    text-align: center;
+    padding: 10px;
+}
 .note {
     background-color: bisque;
     text-align: center;
@@ -63,9 +72,9 @@ body {
 
 .floating-image {
     position: absolute;
-    left: 120px;
+    left: 100px;
     top: 500px;
-    z-index: -1;
+    z-index: -999;
     padding: 10px 0;
     animation: float 5s ease-in-out infinite;
 }
@@ -121,6 +130,15 @@ button {
     min-width: 15px;
     color: white;
     border: none;
-
     background-color: palevioletred;
+}
+
+footer {
+    margin-top: 200px;
+    color: palevioletred;
+    text-align: center;
+}
+
+footer b {
+    font-family: 'Sofia';
 }

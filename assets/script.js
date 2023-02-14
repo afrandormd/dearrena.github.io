@@ -1,5 +1,5 @@
 // Tampilkan pesan sapaan ketika pengunjung membuka situs web untuk pertama kali
-window.onload = alert('pencet gambar suratnya sayaang!')
+alert('pencet gambar suratnya sayaang!')
 
 function showGreeting() {
   var greeting = document.getElementById("greeting");
