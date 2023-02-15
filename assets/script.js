@@ -1,5 +1,5 @@
 // Tampilkan pesan sapaan ketika pengunjung membuka situs web untuk pertama kali
-alert('pencet gambar suratnya sayaang!')
+let info = alert('pencet gambar suratnya sayaang!')
 
 function showGreeting() {
   var greeting = document.getElementById("greeting");
@@ -53,21 +53,21 @@ function playStop(){
 // typeWriter()
 
 // // Cek apakah ini kunjungan pertama pengunjung menggunakan cookie
-// function checkFirstVisit() {
-//   if (document.cookie.indexOf("visited") == -1) {
-//     // Jika belum pernah dikunjungi, tampilkan pesan sapaan
-//     showGreeting();
+function checkFirstVisit() {
+  if (document.cookie.indexOf("visited") == -1) {
+    // Jika belum pernah dikunjungi, tampilkan pesan sapaan
+    alert(info)
     
-//     // Set cookie untuk menandai bahwa pengunjung sudah pernah mengunjungi situs web
-//     var date = new Date();
-//     date.setTime(date.getTime() + (30 * 24 * 60 * 60 * 1000)); // Set cookie untuk 30 hari
-//     var expires = "expires=" + date.toUTCString();
-//     document.cookie = "visited=true; " + expires + "; path=/";
-//   }
-// }
+    // Set cookie untuk menandai bahwa pengunjung sudah pernah mengunjungi situs web
+    var date = new Date();
+    date.setTime(date.getTime() + (30 * 24 * 60 * 60 * 1000)); // Set cookie untuk 30 hari
+    var expires = "expires=" + date.toUTCString();
+    document.cookie = "visited=true; " + expires + "; path=/";
+  }
+}
 
 // Panggil fungsi checkFirstVisit() ketika halaman dimuat
-// window.onload = checkFirstVisit;
+window.onload = checkFirstVisit;
 window.onload = showGreeting();
 // Tambahkan event listener pada tombol "Saya Mengerti"
 document.getElementById("dismiss").addEventListener("click", dismissGreeting);

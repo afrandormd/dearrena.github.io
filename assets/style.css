@@ -9,6 +9,10 @@
 
 body {
     width: 100vw;
+    background-image: url(img/bg-dino.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: lighten;
     font-family: 'Nunito', sans-serif;
     background-color: lightpink;
 }
@@ -18,7 +22,7 @@ body {
 }
 .container h1 {
     font-family: 'Sofia', courier;
-    color: white;
+    color: violet;
     text-align: center;
     padding: 5px 5;
 }
@@ -34,10 +38,8 @@ body {
 }
 
 .img-container{
-    background-color: palevioletred;
     z-index: -999;
     margin: 10px 0;
-    width: 70vw;
     text-align: center;
     padding: 10px;
 }
@@ -47,6 +49,10 @@ body {
     margin: 2% 0;
     padding: 3%;
     border-radius: 15px;
+}
+
+.note b {
+    color: palevioletred;
 }
 
 /* teks berjalan */
@@ -74,7 +80,7 @@ body {
     position: absolute;
     left: 100px;
     top: 500px;
-    z-index: -999;
+    z-index: 0;
     padding: 10px 0;
     animation: float 5s ease-in-out infinite;
 }
@@ -92,7 +98,11 @@ body {
 }
 
 .welcome {
-position: fixed;
+  position: fixed;
+  background-image: url(img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: lighten;
   z-index: 999;
   font-family: 'Sofia', courier;
   top: 50%;
