@@ -78,8 +78,16 @@ body {
 
 .floating-image {
     position: absolute;
-    left: 100px;
-    top: 500px;
+    left: 190px;
+    top: 50px;
+    z-index: 0;
+    padding: 10px 0;
+    animation: float 5s ease-in-out infinite;
+}
+.floating-image1 {
+    position: absolute;
+    left: 40px;
+    top: 190px;
     z-index: 0;
     padding: 10px 0;
     animation: float 5s ease-in-out infinite;
