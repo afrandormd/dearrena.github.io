@@ -1,5 +1,5 @@
 // Tampilkan pesan sapaan ketika pengunjung membuka situs web untuk pertama kali
-let info = alert('pencet gambar suratnya sayaang!')
+// let info = alert('pencet gambar suratnya sayaang!')
 
 function showGreeting() {
   var greeting = document.getElementById("greeting");
@@ -35,3 +35,30 @@ function playStop(){
 window.onload = showGreeting();
 // Tambahkan event listener pada tombol "Saya Mengerti"
 document.getElementById("dismiss").addEventListener("click", dismissGreeting);
+
+
+// declare variable nomor awal
+let nomor = 1
+  function previous() {
+    nomor = nomor-1
+    // kondisi jika nomor > batas gambar
+    if (nomor < 1) {
+      nomor = 4 
+    }
+    // declare variable
+    let lokasi = `assets/img/gallery/${nomor}.jpeg`
+    // select atribut
+    document.getElementById('gambar').src = lokasi
+  }
+
+  function next() {
+    nomor = nomor+1
+    // kondisi jika nomor > batas gambar
+    if (nomor > 4) {
+      nomor = 1 
+    }
+    // declare variable
+    let lokasi = `assets/img/gallery/${nomor}.jpeg`
+    // select atribut
+    document.getElementById('gambar').src = lokasi
+  }
